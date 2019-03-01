@@ -1,2 +1,3 @@
-# homeyscripts
-homeyscripts
+# Homeyscripts
+
+Snippets
