@@ -12,4 +12,4 @@ async function sms(to, message) {
     console.log(r.returns);
 }
 
-await sms("0700000000", "Hello 🎂!"");
+await sms("0700000000", "Hello 🎂!");
