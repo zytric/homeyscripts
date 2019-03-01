@@ -1,6 +1,12 @@
 // Send SMS for 0,5kr/sms
 // https://www.cellsynt.com/pdf/Cellsynt_SMS_gateway_HTTP_interface_(Swedish).pdf
 
+// Success response:
+// OK: 92dff27302b754424242fb204620dc18 > Will return: 92dff27302b754424242fb204620dc18
+
+// Follow up:
+// https://example.org/delivery-receipts?trackingid=92dff27302b754424242fb204620dc18&status=delivered&destination=0046700123123
+
 async function sms(destination, text, originator = "46700000123") {
     let username = "username";
     let password = "password";
@@ -16,4 +22,4 @@ async function sms(destination, text, originator = "46700000123") {
     });
 }
 
-await sms("0700000000", "Hejsan!");
+await sms("0700123456", "Hello!");
