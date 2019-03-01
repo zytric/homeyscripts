@@ -1,3 +1,3 @@
-# Homeyscripts
+# HomeyScripts
 
 Snippets
