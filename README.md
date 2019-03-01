@@ -1,3 +1,3 @@
 # HomeyScripts
 
-Snippets
+My homey snippets. Use at own risk.
