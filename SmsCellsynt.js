@@ -4,7 +4,7 @@
 async function sms(destination, text, originator = "46700000000") {
     let username = "username";
     let password = "password";
-    let url = `https://se-1.cellsynt.net/sms.php?username=${username}&password=${password}&destination=${destination}&type=text&charset=UTF8&originatortype=alpha&originator=${originator}&text=${text}`;
+    let url = `https://se-1.cellsynt.net/sms.php?username=${username}&password=${password}&destination=${destination}&type=text&charset=UTF8&originatortype=alpha&originator=${originator}&text=${encodeURIComponent(text)}`;
     return fetch(url).then(function(response) {
         return response.text()
     }).then(function(html) {
