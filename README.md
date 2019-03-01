@@ -2,19 +2,19 @@
 
 My homey snippets. Use at own risk.
 
-## Structure
+### Structure
  * CallScript.js
  * OpenSave.js
 
-## Information
+### Information
  * Namnsdag.js - Get Swedish "namnsdag"
 
-## Insights
+### Insights
  * SleepingHours.js - Return which hours you slept. Based on you motion/triggers
 
-## Communication
+### Communication
  * Telegram.js - Send Telegram message
  * SmsCellsynt.js - Send SMS (0,5 SEK/SMS)
 
-## Scrape
+### Scrape
  * Ratsit.js - Get address, phone, birth
