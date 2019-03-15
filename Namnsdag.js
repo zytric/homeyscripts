@@ -5,4 +5,5 @@ let today = new Date();
 let month = ("0"+(today.getMonth()+1)).slice(-2);
 let day = ("0"+today.getDate()).slice(-2);
 let namnsdag = _.find(namnsdagar, function(o) { return o.month == month && o.day == day; });
+await setTagValue("Namnsdag", {type: "string", title: "Namnsdag"}, namnsdag.name);
 return namnsdag.name;
