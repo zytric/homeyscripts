@@ -1,8 +1,5 @@
-// The following script returns your sleeping hours based on your motions and alarm sensors
-// Returns when you went to bed - when you got up. (e.g. 23:20:00 - 08:10:00)
-
 Date.prototype.readableTime = function() {
-    return `${("0"+this.getHours()).slice(-2)}:${("0"+this.getMinutes()).slice(-2)}:${("0"+this.getSeconds()).slice(-2)}`;
+    return `${("0"+this.getHours()).slice(-2)}:${("0"+this.getMinutes()).slice(-2)}`;
 };
 
 async function logs() {
@@ -32,4 +29,6 @@ var logs = await logs();
 var s = _.last(_.filter(logs, function(o) { return o < startSleeping; })).readableTime();
 var e = _.filter(logs, function(o) { return o > stopSleeping; })[0].readableTime();
 
-return `${s} - ${e}`;
+let sleepHours = `${s} - ${e}`;
+setTagValue("SleepHours", {type: "string", title: "SleepHours"}, sleepHours)
+return sleepHours;
